@@ -16,6 +16,9 @@ class _HomeScreenState extends State<HomeScreen> {
   final SeasonService seasonService = SeasonService();
   final AudioPlayer player = AudioPlayer();
 
+  final AudioPlayer backgroundPlayer = AudioPlayer();
+  bool isBackgroundMusicPlaying = true;
+
   List<MicroSeason> seasons = [];
   int currentIndex = 0;
   bool loading = true;
@@ -24,6 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
     loadData();
+    startBackgroundMusic();
   }
 
   Future<void> loadData() async {
@@ -39,11 +43,42 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  Future<void> startBackgroundMusic() async {
+    try {
+      await backgroundPlayer.setAsset('assets/audio/background/shizuka_na_kisetsu.mp3');
+      await backgroundPlayer.setLoopMode(LoopMode.one);
+      await backgroundPlayer.setVolume(0.35);
+      await backgroundPlayer.play();
+    } catch (e) {
+      debugPrint('Errore musica background: $e');
+    }
+  }
+
+  Future<void> toggleBackgroundMusic() async {
+  if (backgroundPlayer.playing) {
+    await backgroundPlayer.pause();
+    setState(() {
+      isBackgroundMusicPlaying = false;
+    });
+  } else {
+    await backgroundPlayer.play();
+    setState(() {
+      isBackgroundMusicPlaying = true;
+    });
+  }
+}
+
   Future<void> playAudio() async {
     final season = seasons[currentIndex];
-
-    await player.setAsset(season.audioAsset);
-    await player.play();
+    debugPrint('AUDIO ASSET: ${season.audioAsset}');
+    debugPrint('SEASON ID: ${season.id}');
+    try {
+      await player.stop();
+      await player.setAsset(season.audioAsset);
+      await player.play();
+    } catch (e) {
+      debugPrint('Errore audio pronuncia: $e');
+    }
   }
 
   void previousSeason() {
@@ -61,6 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void dispose() {
     player.dispose();
+    backgroundPlayer.dispose();
     super.dispose();
   }
 
@@ -141,7 +177,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 season.romaji,
                 style: const TextStyle(
                   fontSize: 26,
-                  color: Colors.white70,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
               ),
 
@@ -152,8 +189,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 18,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.white,
+                  color: Colors.white70,
                 ),
               ),
 
@@ -182,7 +218,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               const SizedBox(height: 20),
 
-              Text(
+              /*Text(
                 season.description,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
@@ -190,7 +226,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 1.5,
                   color: Colors.white70,
                 ),
-              ),
+              ),*/
 
               const SizedBox(height: 40),
 
@@ -224,9 +260,20 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(height: 20),
             ],
           ),
+          
         ),
       ),
     ],
+  ),
+    floatingActionButton: FloatingActionButton(
+    backgroundColor: Colors.black54,
+    foregroundColor: Colors.white,
+    onPressed: toggleBackgroundMusic,
+    child: Icon(
+      isBackgroundMusicPlaying
+          ? Icons.music_note
+          : Icons.music_off,
+    ),
   ),
 );
   }

@@ -15,7 +15,7 @@
       "englishName": "East wind melts the ice",
       "description": "East wind melts the ice.",
       "imageAsset": "assets/images/micro_seasons/01.png",
-      "audioAsset": "assets/audio/micro_seasons/01.mp3",
+      "audioAsset": "assets/audio/micro_seasons/01.wav",
       "notificationTime": "08:00",
       "startDate": "0204",
       "endDate": "0208"
@@ -32,7 +32,7 @@
       "englishName": "Bush warblers start singing in the mountains",
       "description": "Bush warblers start singing in the mountains.",
       "imageAsset": "assets/images/micro_seasons/02.png",
-      "audioAsset": "assets/audio/micro_seasons/02.mp3",
+      "audioAsset": "assets/audio/micro_seasons/02.wav",
       "notificationTime": "08:00",
       "startDate": "0209",
       "endDate": "0213"
@@ -49,7 +49,7 @@
       "englishName": "Fish emerge from the ice",
       "description": "Fish emerge from the ice.",
       "imageAsset": "assets/images/micro_seasons/03.png",
-      "audioAsset": "assets/audio/micro_seasons/03.mp3",
+      "audioAsset": "assets/audio/micro_seasons/03.wav",
       "notificationTime": "08:00",
       "startDate": "0214",
       "endDate": "0218"
@@ -66,7 +66,7 @@
       "englishName": "Rain moistens the soil",
       "description": "Rain moistens the soil.",
       "imageAsset": "assets/images/micro_seasons/04.png",
-      "audioAsset": "assets/audio/micro_seasons/04.mp3",
+      "audioAsset": "assets/audio/micro_seasons/04.wav",
       "notificationTime": "08:00",
       "startDate": "0219",
       "endDate": "0223"
@@ -83,7 +83,7 @@
       "englishName": "Mist starts to linger",
       "description": "Mist starts to linger.",
       "imageAsset": "assets/images/micro_seasons/05.png",
-      "audioAsset": "assets/audio/micro_seasons/05.mp3",
+      "audioAsset": "assets/audio/micro_seasons/05.wav",
       "notificationTime": "08:00",
       "startDate": "0224",
       "endDate": "0228"
@@ -100,7 +100,7 @@
       "englishName": "Grass sprouts, trees bud",
       "description": "Grass sprouts, trees bud.",
       "imageAsset": "assets/images/micro_seasons/06.png",
-      "audioAsset": "assets/audio/micro_seasons/06.mp3",
+      "audioAsset": "assets/audio/micro_seasons/06.wav",
       "notificationTime": "08:00",
       "startDate": "0301",
       "endDate": "0305"
@@ -117,7 +117,7 @@
       "englishName": "Hibernating insects surface",
       "description": "Hibernating insects surface.",
       "imageAsset": "assets/images/micro_seasons/07.png",
-      "audioAsset": "assets/audio/micro_seasons/07.mp3",
+      "audioAsset": "assets/audio/micro_seasons/07.wav",
       "notificationTime": "08:00",
       "startDate": "0306",
       "endDate": "0310"
@@ -134,7 +134,7 @@
       "englishName": "First peach blossoms",
       "description": "First peach blossoms.",
       "imageAsset": "assets/images/micro_seasons/08.png",
-      "audioAsset": "assets/audio/micro_seasons/08.mp3",
+      "audioAsset": "assets/audio/micro_seasons/08.wav",
       "notificationTime": "08:00",
       "startDate": "0311",
       "endDate": "0315"
@@ -151,7 +151,7 @@
       "englishName": "Caterpillars become butterflies",
       "description": "Caterpillars become butterflies.",
       "imageAsset": "assets/images/micro_seasons/09.png",
-      "audioAsset": "assets/audio/micro_seasons/09.mp3",
+      "audioAsset": "assets/audio/micro_seasons/09.wav",
       "notificationTime": "08:00",
       "startDate": "0316",
       "endDate": "0320"
@@ -168,7 +168,7 @@
       "englishName": "Sparrows start to nest",
       "description": "Sparrows start to nest.",
       "imageAsset": "assets/images/micro_seasons/10.png",
-      "audioAsset": "assets/audio/micro_seasons/10.mp3",
+      "audioAsset": "assets/audio/micro_seasons/10.wav",
       "notificationTime": "08:00",
       "startDate": "0321",
       "endDate": "0325"
@@ -185,7 +185,7 @@
       "englishName": "First cherry blossoms",
       "description": "First cherry blossoms.",
       "imageAsset": "assets/images/micro_seasons/11.png",
-      "audioAsset": "assets/audio/micro_seasons/11.mp3",
+      "audioAsset": "assets/audio/micro_seasons/11.wav",
       "notificationTime": "08:00",
       "startDate": "0326",
       "endDate": "0330"
@@ -202,7 +202,7 @@
       "englishName": "Distant thunder",
       "description": "Distant thunder.",
       "imageAsset": "assets/images/micro_seasons/12.png",
-      "audioAsset": "assets/audio/micro_seasons/12.mp3",
+      "audioAsset": "assets/audio/micro_seasons/12.wav",
       "notificationTime": "08:00",
       "startDate": "0331",
       "endDate": "0404"
@@ -219,7 +219,7 @@
       "englishName": "Swallows return",
       "description": "Swallows return.",
       "imageAsset": "assets/images/micro_seasons/13.png",
-      "audioAsset": "assets/audio/micro_seasons/13.mp3",
+      "audioAsset": "assets/audio/micro_seasons/13.wav",
       "notificationTime": "08:00",
       "startDate": "0405",
       "endDate": "0409"
@@ -236,7 +236,7 @@
       "englishName": "Wild geese fly north",
       "description": "Wild geese fly north.",
       "imageAsset": "assets/images/micro_seasons/14.png",
-      "audioAsset": "assets/audio/micro_seasons/14.mp3",
+      "audioAsset": "assets/audio/micro_seasons/14.wav",
       "notificationTime": "08:00",
       "startDate": "0410",
       "endDate": "0414"
@@ -253,7 +253,7 @@
       "englishName": "First rainbows",
       "description": "First rainbows.",
       "imageAsset": "assets/images/micro_seasons/15.png",
-      "audioAsset": "assets/audio/micro_seasons/15.mp3",
+      "audioAsset": "assets/audio/micro_seasons/15.wav",
       "notificationTime": "08:00",
       "startDate": "0415",
       "endDate": "0419"
@@ -270,7 +270,7 @@
       "englishName": "First reeds sprout",
       "description": "First reeds sprout.",
       "imageAsset": "assets/images/micro_seasons/16.png",
-      "audioAsset": "assets/audio/micro_seasons/16.mp3",
+      "audioAsset": "assets/audio/micro_seasons/16.wav",
       "notificationTime": "08:00",
       "startDate": "0420",
       "endDate": "0424"
@@ -287,7 +287,7 @@
       "englishName": "Last frost, rice seedlings grow",
       "description": "Last frost, rice seedlings grow.",
       "imageAsset": "assets/images/micro_seasons/17.png",
-      "audioAsset": "assets/audio/micro_seasons/17.mp3",
+      "audioAsset": "assets/audio/micro_seasons/17.wav",
       "notificationTime": "08:00",
       "startDate": "0425",
       "endDate": "0429"
@@ -304,7 +304,7 @@
       "englishName": "Peonies bloom",
       "description": "Peonies bloom.",
       "imageAsset": "assets/images/micro_seasons/18.png",
-      "audioAsset": "assets/audio/micro_seasons/18.mp3",
+      "audioAsset": "assets/audio/micro_seasons/18.wav",
       "notificationTime": "08:00",
       "startDate": "0430",
       "endDate": "0504"
@@ -321,7 +321,7 @@
       "englishName": "Frogs start singing",
       "description": "Frogs start singing.",
       "imageAsset": "assets/images/micro_seasons/19.png",
-      "audioAsset": "assets/audio/micro_seasons/19.mp3",
+      "audioAsset": "assets/audio/micro_seasons/19.wav",
       "notificationTime": "08:00",
       "startDate": "0505",
       "endDate": "0509"
@@ -338,7 +338,7 @@
       "englishName": "Worms surface",
       "description": "Worms surface.",
       "imageAsset": "assets/images/micro_seasons/20.png",
-      "audioAsset": "assets/audio/micro_seasons/20.mp3",
+      "audioAsset": "assets/audio/micro_seasons/20.wav",
       "notificationTime": "08:00",
       "startDate": "0510",
       "endDate": "0514"
@@ -355,7 +355,7 @@
       "englishName": "Bamboo shoots sprout",
       "description": "Bamboo shoots sprout.",
       "imageAsset": "assets/images/micro_seasons/21.png",
-      "audioAsset": "assets/audio/micro_seasons/21.mp3",
+      "audioAsset": "assets/audio/micro_seasons/21.wav",
       "notificationTime": "08:00",
       "startDate": "0515",
       "endDate": "0520"
@@ -372,7 +372,7 @@
       "englishName": "Silkworms start feasting on mulberry leaves",
       "description": "Silkworms start feasting on mulberry leaves.",
       "imageAsset": "assets/images/micro_seasons/22.png",
-      "audioAsset": "assets/audio/micro_seasons/22.mp3",
+      "audioAsset": "assets/audio/micro_seasons/22.wav",
       "notificationTime": "08:00",
       "startDate": "0521",
       "endDate": "0525"
@@ -389,7 +389,7 @@
       "englishName": "Safflowers bloom",
       "description": "Safflowers bloom.",
       "imageAsset": "assets/images/micro_seasons/23.png",
-      "audioAsset": "assets/audio/micro_seasons/23.mp3",
+      "audioAsset": "assets/audio/micro_seasons/23.wav",
       "notificationTime": "08:00",
       "startDate": "0526",
       "endDate": "0530"
@@ -406,7 +406,7 @@
       "englishName": "Wheat ripens and is harvested",
       "description": "Wheat ripens and is harvested.",
       "imageAsset": "assets/images/micro_seasons/24.png",
-      "audioAsset": "assets/audio/micro_seasons/24.mp3",
+      "audioAsset": "assets/audio/micro_seasons/24.wav",
       "notificationTime": "08:00",
       "startDate": "0531",
       "endDate": "0605"
@@ -423,7 +423,7 @@
       "englishName": "Praying mantises hatch",
       "description": "Praying mantises hatch.",
       "imageAsset": "assets/images/micro_seasons/25.png",
-      "audioAsset": "assets/audio/micro_seasons/25.mp3",
+      "audioAsset": "assets/audio/micro_seasons/25.wav",
       "notificationTime": "08:00",
       "startDate": "0606",
       "endDate": "0610"
@@ -440,7 +440,7 @@
       "englishName": "Rotten grass becomes fireflies",
       "description": "Rotten grass becomes fireflies.",
       "imageAsset": "assets/images/micro_seasons/26.png",
-      "audioAsset": "assets/audio/micro_seasons/26.mp3",
+      "audioAsset": "assets/audio/micro_seasons/26.wav",
       "notificationTime": "08:00",
       "startDate": "0611",
       "endDate": "0615"
@@ -457,7 +457,7 @@
       "englishName": "Plums turn yellow",
       "description": "Plums turn yellow.",
       "imageAsset": "assets/images/micro_seasons/27.png",
-      "audioAsset": "assets/audio/micro_seasons/27.mp3",
+      "audioAsset": "assets/audio/micro_seasons/27.wav",
       "notificationTime": "08:00",
       "startDate": "0616",
       "endDate": "0620"
@@ -474,7 +474,7 @@
       "englishName": "Self-heal withers",
       "description": "Self-heal withers.",
       "imageAsset": "assets/images/micro_seasons/28.png",
-      "audioAsset": "assets/audio/micro_seasons/28.mp3",
+      "audioAsset": "assets/audio/micro_seasons/28.wav",
       "notificationTime": "08:00",
       "startDate": "0621",
       "endDate": "0626"
@@ -491,7 +491,7 @@
       "englishName": "Irises bloom",
       "description": "Irises bloom.",
       "imageAsset": "assets/images/micro_seasons/29.png",
-      "audioAsset": "assets/audio/micro_seasons/29.mp3",
+      "audioAsset": "assets/audio/micro_seasons/29.wav",
       "notificationTime": "08:00",
       "startDate": "0627",
       "endDate": "0701"
@@ -508,7 +508,7 @@
       "englishName": "Crow-dipper sprouts",
       "description": "Crow-dipper sprouts.",
       "imageAsset": "assets/images/micro_seasons/30.png",
-      "audioAsset": "assets/audio/micro_seasons/30.mp3",
+      "audioAsset": "assets/audio/micro_seasons/30.wav",
       "notificationTime": "08:00",
       "startDate": "0702",
       "endDate": "0706"
@@ -525,7 +525,7 @@
       "englishName": "Warm winds blow",
       "description": "Warm winds blow.",
       "imageAsset": "assets/images/micro_seasons/31.png",
-      "audioAsset": "assets/audio/micro_seasons/31.mp3",
+      "audioAsset": "assets/audio/micro_seasons/31.wav",
       "notificationTime": "08:00",
       "startDate": "0707",
       "endDate": "0711"
@@ -542,7 +542,7 @@
       "englishName": "First lotus blossoms",
       "description": "First lotus blossoms.",
       "imageAsset": "assets/images/micro_seasons/32.png",
-      "audioAsset": "assets/audio/micro_seasons/32.mp3",
+      "audioAsset": "assets/audio/micro_seasons/32.wav",
       "notificationTime": "08:00",
       "startDate": "0712",
       "endDate": "0716"
@@ -559,7 +559,7 @@
       "englishName": "Hawks learn to fly",
       "description": "Hawks learn to fly.",
       "imageAsset": "assets/images/micro_seasons/33.png",
-      "audioAsset": "assets/audio/micro_seasons/33.mp3",
+      "audioAsset": "assets/audio/micro_seasons/33.wav",
       "notificationTime": "08:00",
       "startDate": "0717",
       "endDate": "0722"
@@ -576,7 +576,7 @@
       "englishName": "Paulownia trees produce seeds",
       "description": "Paulownia trees produce seeds.",
       "imageAsset": "assets/images/micro_seasons/34.png",
-      "audioAsset": "assets/audio/micro_seasons/34.mp3",
+      "audioAsset": "assets/audio/micro_seasons/34.wav",
       "notificationTime": "08:00",
       "startDate": "0723",
       "endDate": "0728"
@@ -593,7 +593,7 @@
       "englishName": "Earth is damp, air is humid",
       "description": "Earth is damp, air is humid.",
       "imageAsset": "assets/images/micro_seasons/35.png",
-      "audioAsset": "assets/audio/micro_seasons/35.mp3",
+      "audioAsset": "assets/audio/micro_seasons/35.wav",
       "notificationTime": "08:00",
       "startDate": "0729",
       "endDate": "0802"
@@ -610,7 +610,7 @@
       "englishName": "Great rains sometimes fall",
       "description": "Great rains sometimes fall.",
       "imageAsset": "assets/images/micro_seasons/36.png",
-      "audioAsset": "assets/audio/micro_seasons/36.mp3",
+      "audioAsset": "assets/audio/micro_seasons/36.wav",
       "notificationTime": "08:00",
       "startDate": "0803",
       "endDate": "0807"
@@ -627,7 +627,7 @@
       "englishName": "Cool winds blow",
       "description": "Cool winds blow.",
       "imageAsset": "assets/images/micro_seasons/37.png",
-      "audioAsset": "assets/audio/micro_seasons/37.mp3",
+      "audioAsset": "assets/audio/micro_seasons/37.wav",
       "notificationTime": "08:00",
       "startDate": "0808",
       "endDate": "0812"
@@ -644,7 +644,7 @@
       "englishName": "Evening cicadas sing",
       "description": "Evening cicadas sing.",
       "imageAsset": "assets/images/micro_seasons/38.png",
-      "audioAsset": "assets/audio/micro_seasons/38.mp3",
+      "audioAsset": "assets/audio/micro_seasons/38.wav",
       "notificationTime": "08:00",
       "startDate": "0813",
       "endDate": "0817"
@@ -661,7 +661,7 @@
       "englishName": "Thick fog descends",
       "description": "Thick fog descends.",
       "imageAsset": "assets/images/micro_seasons/39.png",
-      "audioAsset": "assets/audio/micro_seasons/39.mp3",
+      "audioAsset": "assets/audio/micro_seasons/39.wav",
       "notificationTime": "08:00",
       "startDate": "0818",
       "endDate": "0822"
@@ -678,7 +678,7 @@
       "englishName": "Cotton flowers bloom",
       "description": "Cotton flowers bloom.",
       "imageAsset": "assets/images/micro_seasons/40.png",
-      "audioAsset": "assets/audio/micro_seasons/40.mp3",
+      "audioAsset": "assets/audio/micro_seasons/40.wav",
       "notificationTime": "08:00",
       "startDate": "0823",
       "endDate": "0827"
@@ -695,7 +695,7 @@
       "englishName": "Heat starts to die down",
       "description": "Heat starts to die down.",
       "imageAsset": "assets/images/micro_seasons/41.png",
-      "audioAsset": "assets/audio/micro_seasons/41.mp3",
+      "audioAsset": "assets/audio/micro_seasons/41.wav",
       "notificationTime": "08:00",
       "startDate": "0828",
       "endDate": "0901"
@@ -712,7 +712,7 @@
       "englishName": "Rice ripens",
       "description": "Rice ripens.",
       "imageAsset": "assets/images/micro_seasons/42.png",
-      "audioAsset": "assets/audio/micro_seasons/42.mp3",
+      "audioAsset": "assets/audio/micro_seasons/42.wav",
       "notificationTime": "08:00",
       "startDate": "0902",
       "endDate": "0907"
@@ -729,7 +729,7 @@
       "englishName": "Dew glistens white on grass",
       "description": "Dew glistens white on grass.",
       "imageAsset": "assets/images/micro_seasons/43.png",
-      "audioAsset": "assets/audio/micro_seasons/43.mp3",
+      "audioAsset": "assets/audio/micro_seasons/43.wav",
       "notificationTime": "08:00",
       "startDate": "0908",
       "endDate": "0912"
@@ -746,7 +746,7 @@
       "englishName": "Wagtails sing",
       "description": "Wagtails sing.",
       "imageAsset": "assets/images/micro_seasons/44.png",
-      "audioAsset": "assets/audio/micro_seasons/44.mp3",
+      "audioAsset": "assets/audio/micro_seasons/44.wav",
       "notificationTime": "08:00",
       "startDate": "0913",
       "endDate": "0917"
@@ -763,7 +763,7 @@
       "englishName": "Swallows leave",
       "description": "Swallows leave.",
       "imageAsset": "assets/images/micro_seasons/45.png",
-      "audioAsset": "assets/audio/micro_seasons/45.mp3",
+      "audioAsset": "assets/audio/micro_seasons/45.wav",
       "notificationTime": "08:00",
       "startDate": "0918",
       "endDate": "0922"
@@ -780,7 +780,7 @@
       "englishName": "Thunder ceases",
       "description": "Thunder ceases.",
       "imageAsset": "assets/images/micro_seasons/46.png",
-      "audioAsset": "assets/audio/micro_seasons/46.mp3",
+      "audioAsset": "assets/audio/micro_seasons/46.wav",
       "notificationTime": "08:00",
       "startDate": "0923",
       "endDate": "0927"
@@ -797,7 +797,7 @@
       "englishName": "Insects hole up underground",
       "description": "Insects hole up underground.",
       "imageAsset": "assets/images/micro_seasons/47.png",
-      "audioAsset": "assets/audio/micro_seasons/47.mp3",
+      "audioAsset": "assets/audio/micro_seasons/47.wav",
       "notificationTime": "08:00",
       "startDate": "0928",
       "endDate": "1002"
@@ -814,7 +814,7 @@
       "englishName": "Farmers drain fields",
       "description": "Farmers drain fields.",
       "imageAsset": "assets/images/micro_seasons/48.png",
-      "audioAsset": "assets/audio/micro_seasons/48.mp3",
+      "audioAsset": "assets/audio/micro_seasons/48.wav",
       "notificationTime": "08:00",
       "startDate": "1003",
       "endDate": "1007"
@@ -831,7 +831,7 @@
       "englishName": "Wild geese return",
       "description": "Wild geese return.",
       "imageAsset": "assets/images/micro_seasons/49.png",
-      "audioAsset": "assets/audio/micro_seasons/49.mp3",
+      "audioAsset": "assets/audio/micro_seasons/49.wav",
       "notificationTime": "08:00",
       "startDate": "1008",
       "endDate": "1012"
@@ -848,7 +848,7 @@
       "englishName": "Chrysanthemums bloom",
       "description": "Chrysanthemums bloom.",
       "imageAsset": "assets/images/micro_seasons/50.png",
-      "audioAsset": "assets/audio/micro_seasons/50.mp3",
+      "audioAsset": "assets/audio/micro_seasons/50.wav",
       "notificationTime": "08:00",
       "startDate": "1013",
       "endDate": "1017"
@@ -865,7 +865,7 @@
       "englishName": "Crickets chirp around the door",
       "description": "Crickets chirp around the door.",
       "imageAsset": "assets/images/micro_seasons/51.png",
-      "audioAsset": "assets/audio/micro_seasons/51.mp3",
+      "audioAsset": "assets/audio/micro_seasons/51.wav",
       "notificationTime": "08:00",
       "startDate": "1018",
       "endDate": "1022"
@@ -882,7 +882,7 @@
       "englishName": "First frost",
       "description": "First frost.",
       "imageAsset": "assets/images/micro_seasons/52.png",
-      "audioAsset": "assets/audio/micro_seasons/52.mp3",
+      "audioAsset": "assets/audio/micro_seasons/52.wav",
       "notificationTime": "08:00",
       "startDate": "1023",
       "endDate": "1027"
@@ -899,7 +899,7 @@
       "englishName": "Light rains sometimes fall",
       "description": "Light rains sometimes fall.",
       "imageAsset": "assets/images/micro_seasons/53.png",
-      "audioAsset": "assets/audio/micro_seasons/53.mp3",
+      "audioAsset": "assets/audio/micro_seasons/53.wav",
       "notificationTime": "08:00",
       "startDate": "1028",
       "endDate": "1101"
@@ -916,7 +916,7 @@
       "englishName": "Maple leaves and ivy turn yellow",
       "description": "Maple leaves and ivy turn yellow.",
       "imageAsset": "assets/images/micro_seasons/54.png",
-      "audioAsset": "assets/audio/micro_seasons/54.mp3",
+      "audioAsset": "assets/audio/micro_seasons/54.wav",
       "notificationTime": "08:00",
       "startDate": "1102",
       "endDate": "1106"
@@ -933,7 +933,7 @@
       "englishName": "Camellias bloom",
       "description": "Camellias bloom.",
       "imageAsset": "assets/images/micro_seasons/55.png",
-      "audioAsset": "assets/audio/micro_seasons/55.mp3",
+      "audioAsset": "assets/audio/micro_seasons/55.wav",
       "notificationTime": "08:00",
       "startDate": "1107",
       "endDate": "1111"
@@ -950,7 +950,7 @@
       "englishName": "Land starts to freeze",
       "description": "Land starts to freeze.",
       "imageAsset": "assets/images/micro_seasons/56.png",
-      "audioAsset": "assets/audio/micro_seasons/56.mp3",
+      "audioAsset": "assets/audio/micro_seasons/56.wav",
       "notificationTime": "08:00",
       "startDate": "1112",
       "endDate": "1116"
@@ -967,7 +967,7 @@
       "englishName": "Daffodils bloom",
       "description": "Daffodils bloom.",
       "imageAsset": "assets/images/micro_seasons/57.png",
-      "audioAsset": "assets/audio/micro_seasons/57.mp3",
+      "audioAsset": "assets/audio/micro_seasons/57.wav",
       "notificationTime": "08:00",
       "startDate": "1117",
       "endDate": "1121"
@@ -984,7 +984,7 @@
       "englishName": "Rainbows hide",
       "description": "Rainbows hide.",
       "imageAsset": "assets/images/micro_seasons/58.png",
-      "audioAsset": "assets/audio/micro_seasons/58.mp3",
+      "audioAsset": "assets/audio/micro_seasons/58.wav",
       "notificationTime": "08:00",
       "startDate": "1122",
       "endDate": "1126"
@@ -1001,7 +1001,7 @@
       "englishName": "North wind blows the leaves from the trees",
       "description": "North wind blows the leaves from the trees.",
       "imageAsset": "assets/images/micro_seasons/59.png",
-      "audioAsset": "assets/audio/micro_seasons/59.mp3",
+      "audioAsset": "assets/audio/micro_seasons/59.wav",
       "notificationTime": "08:00",
       "startDate": "1127",
       "endDate": "1201"
@@ -1018,7 +1018,7 @@
       "englishName": "Tachibana citrus tree leaves start to turn yellow",
       "description": "Tachibana citrus tree leaves start to turn yellow.",
       "imageAsset": "assets/images/micro_seasons/60.png",
-      "audioAsset": "assets/audio/micro_seasons/60.mp3",
+      "audioAsset": "assets/audio/micro_seasons/60.wav",
       "notificationTime": "08:00",
       "startDate": "1202",
       "endDate": "1206"
@@ -1035,7 +1035,7 @@
       "englishName": "Cold sets in, winter begins",
       "description": "Cold sets in, winter begins.",
       "imageAsset": "assets/images/micro_seasons/61.png",
-      "audioAsset": "assets/audio/micro_seasons/61.mp3",
+      "audioAsset": "assets/audio/micro_seasons/61.wav",
       "notificationTime": "08:00",
       "startDate": "1207",
       "endDate": "1211"
@@ -1052,7 +1052,7 @@
       "englishName": "Bears start hibernating in their dens",
       "description": "Bears start hibernating in their dens.",
       "imageAsset": "assets/images/micro_seasons/62.png",
-      "audioAsset": "assets/audio/micro_seasons/62.mp3",
+      "audioAsset": "assets/audio/micro_seasons/62.wav",
       "notificationTime": "08:00",
       "startDate": "1212",
       "endDate": "1216"
@@ -1069,7 +1069,7 @@
       "englishName": "Salmon gather and swim upstream",
       "description": "Salmon gather and swim upstream.",
       "imageAsset": "assets/images/micro_seasons/63.png",
-      "audioAsset": "assets/audio/micro_seasons/63.mp3",
+      "audioAsset": "assets/audio/micro_seasons/63.wav",
       "notificationTime": "08:00",
       "startDate": "1217",
       "endDate": "1221"
@@ -1086,7 +1086,7 @@
       "englishName": "Self-heal sprouts",
       "description": "Self-heal sprouts.",
       "imageAsset": "assets/images/micro_seasons/64.png",
-      "audioAsset": "assets/audio/micro_seasons/64.mp3",
+      "audioAsset": "assets/audio/micro_seasons/64.wav",
       "notificationTime": "08:00",
       "startDate": "1222",
       "endDate": "1226"
@@ -1103,7 +1103,7 @@
       "englishName": "Deer shed antlers",
       "description": "Deer shed antlers.",
       "imageAsset": "assets/images/micro_seasons/65.png",
-      "audioAsset": "assets/audio/micro_seasons/65.mp3",
+      "audioAsset": "assets/audio/micro_seasons/65.wav",
       "notificationTime": "08:00",
       "startDate": "1227",
       "endDate": "1231"
@@ -1120,7 +1120,7 @@
       "englishName": "Wheat sprouts under snow",
       "description": "Wheat sprouts under snow.",
       "imageAsset": "assets/images/micro_seasons/66.png",
-      "audioAsset": "assets/audio/micro_seasons/66.mp3",
+      "audioAsset": "assets/audio/micro_seasons/66.wav",
       "notificationTime": "08:00",
       "startDate": "0101",
       "endDate": "0104"
@@ -1137,7 +1137,7 @@
       "englishName": "Parsley flourishes",
       "description": "Parsley flourishes.",
       "imageAsset": "assets/images/micro_seasons/67.png",
-      "audioAsset": "assets/audio/micro_seasons/67.mp3",
+      "audioAsset": "assets/audio/micro_seasons/67.wav",
       "notificationTime": "08:00",
       "startDate": "0105",
       "endDate": "0109"
@@ -1154,7 +1154,7 @@
       "englishName": "Springs thaw",
       "description": "Springs thaw.",
       "imageAsset": "assets/images/micro_seasons/68.png",
-      "audioAsset": "assets/audio/micro_seasons/68.mp3",
+      "audioAsset": "assets/audio/micro_seasons/68.wav",
       "notificationTime": "08:00",
       "startDate": "0110",
       "endDate": "0114"
@@ -1171,7 +1171,7 @@
       "englishName": "Pheasants start to call",
       "description": "Pheasants start to call.",
       "imageAsset": "assets/images/micro_seasons/69.png",
-      "audioAsset": "assets/audio/micro_seasons/69.mp3",
+      "audioAsset": "assets/audio/micro_seasons/69.wav",
       "notificationTime": "08:00",
       "startDate": "0115",
       "endDate": "0119"
@@ -1188,7 +1188,7 @@
       "englishName": "Butterburs bud",
       "description": "Butterburs bud.",
       "imageAsset": "assets/images/micro_seasons/70.png",
-      "audioAsset": "assets/audio/micro_seasons/70.mp3",
+      "audioAsset": "assets/audio/micro_seasons/70.wav",
       "notificationTime": "08:00",
       "startDate": "0120",
       "endDate": "0124"
@@ -1205,7 +1205,7 @@
       "englishName": "Ice thickens on streams",
       "description": "Ice thickens on streams.",
       "imageAsset": "assets/images/micro_seasons/71.png",
-      "audioAsset": "assets/audio/micro_seasons/71.mp3",
+      "audioAsset": "assets/audio/micro_seasons/71.wav",
       "notificationTime": "08:00",
       "startDate": "0125",
       "endDate": "0129"
@@ -1222,7 +1222,7 @@
       "englishName": "Hens start laying eggs",
       "description": "Hens start laying eggs.",
       "imageAsset": "assets/images/micro_seasons/72.png",
-      "audioAsset": "assets/audio/micro_seasons/72.mp3",
+      "audioAsset": "assets/audio/micro_seasons/72.wav",
       "notificationTime": "08:00",
       "startDate": "0130",
       "endDate": "0203"
