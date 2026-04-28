@@ -75,104 +75,159 @@ class _HomeScreenState extends State<HomeScreen> {
     final season = seasons[currentIndex];
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Japanese Micro Seasons'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.settings),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => const SettingsScreen(),
-                ),
-              );
-            },
-          ),
-        ],
+  body: Stack(
+    children: [
+      Positioned.fill(
+        child: Image.asset(
+          season.imageAsset,
+          fit: BoxFit.cover,
+        ),
       ),
-      body: SafeArea(
-        child: Column(
-          children: [
-            Expanded(
-              child: Image.asset(
-                season.imageAsset,
-                width: double.infinity,
-                fit: BoxFit.cover,
-              ),
+
+      Positioned.fill(
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Colors.transparent,
+                Colors.black.withOpacity(0.75),
+              ],
             ),
+          ),
+        ),
+      ),
 
-            Padding(
-              padding: const EdgeInsets.all(24),
-              child: Column(
+      SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            children: [
+              Align(
+                alignment: Alignment.topRight,
+                child: IconButton(
+                  icon: const Icon(
+                    Icons.settings,
+                    color: Colors.white,
+                    size: 28,
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const SettingsScreen(),
+                      ),
+                    );
+                  },
+                ),
+              ),
+
+              const Spacer(),
+
+              Text(
+                season.japaneseName,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 42,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+
+              const SizedBox(height: 8),
+
+              Text(
+                season.romaji,
+                style: const TextStyle(
+                  fontSize: 26,
+                  color: Colors.white70,
+                ),
+              ),
+
+              const SizedBox(height: 16),
+
+              Text(
+                season.englishName,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.white,
+                ),
+              ),
+
+              const SizedBox(height: 8),
+
+              Text(
+                season.dateRange,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 15,
+                  color: Colors.white70,
+                  letterSpacing: 0.5,
+                ),
+              ),
+
+              const SizedBox(height: 20),
+
+              IconButton(
+                icon: const Icon(
+                  Icons.volume_up_rounded,
+                  color: Colors.white,
+                  size: 36,
+                ),
+                onPressed: playAudio,
+              ),
+
+              const SizedBox(height: 20),
+
+              Text(
+                season.description,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 16,
+                  height: 1.5,
+                  color: Colors.white70,
+                ),
+              ),
+
+              const SizedBox(height: 40),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    season.japaneseName,
-                    style: const TextStyle(
-                      fontSize: 34,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-
-                  const SizedBox(height: 8),
-
-                  Text(
-                    season.romaji,
-                    style: const TextStyle(
-                      fontSize: 18,
-                      color: Colors.grey,
-                    ),
-                  ),
-
-                  const SizedBox(height: 12),
-
-                  Text(
-                    season.englishName,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  IconButton.filled(
-                    icon: const Icon(Icons.volume_up),
-                    onPressed: playAudio,
-                  ),
-
-                  const SizedBox(height: 16),
-
-                  Text(
-                    season.description,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(fontSize: 16),
-                  ),
-
-                  const SizedBox(height: 24),
-
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      ElevatedButton.icon(
-                        onPressed: previousSeason,
-                        icon: const Icon(Icons.chevron_left),
-                        label: const Text('Previous'),
+                  CircleAvatar(
+                    backgroundColor: Colors.white24,
+                    child: IconButton(
+                      icon: const Icon(
+                        Icons.chevron_left,
+                        color: Colors.white,
                       ),
-                      ElevatedButton.icon(
-                        onPressed: nextSeason,
-                        icon: const Icon(Icons.chevron_right),
-                        label: const Text('Next'),
+                      onPressed: previousSeason,
+                    ),
+                  ),
+
+                  CircleAvatar(
+                    backgroundColor: Colors.white24,
+                    child: IconButton(
+                      icon: const Icon(
+                        Icons.chevron_right,
+                        color: Colors.white,
                       ),
-                    ],
+                      onPressed: nextSeason,
+                    ),
                   ),
                 ],
               ),
-            ),
-          ],
+
+              const SizedBox(height: 20),
+            ],
+          ),
         ),
       ),
-    );
+    ],
+  ),
+);
   }
 }

@@ -8,6 +8,7 @@ class MicroSeason {
   final String endDate;
   final String imageAsset;
   final String audioAsset;
+  final String dateRange;
 
   MicroSeason({
     required this.id,
@@ -19,6 +20,7 @@ class MicroSeason {
     required this.endDate,
     required this.imageAsset,
     required this.audioAsset,
+    required this.dateRange,
   });
 
   factory MicroSeason.fromJson(Map<String, dynamic> json) {
@@ -32,6 +34,7 @@ class MicroSeason {
       endDate: json['endDate'],
       imageAsset: json['imageAsset'],
       audioAsset: json['audioAsset'],
+      dateRange: json['dateRange'],
     );
   }
 }
