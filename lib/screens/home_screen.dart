@@ -4,6 +4,7 @@ import '../models/micro_season.dart';
 import '../services/season_service.dart';
 import 'settings_screen.dart';
 import '../services/notification_service.dart';
+import 'package:flutter/services.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -139,12 +140,13 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Image.asset(
           season.imageAsset,
           fit: BoxFit.cover,
+          alignment: Alignment(-0.2, 0),
         ),
       ),
      ),
     ),
 
-      Positioned.fill(
+     Positioned.fill(
         child: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -158,7 +160,30 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-
+      Positioned(
+        right: 20,
+        bottom: 24,
+        child: SafeArea(
+          child: Material(
+            color: Colors.black38,
+            shape: const CircleBorder(),
+            child: InkWell(
+              customBorder: const CircleBorder(),
+              onTap: () {
+                debugPrint('CHIUDI APP PREMUTO');
+                SystemNavigator.pop();
+              },
+              child: const Padding(
+                padding: EdgeInsets.all(14),
+                child: Icon(
+                  Icons.close,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
       SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(20),
