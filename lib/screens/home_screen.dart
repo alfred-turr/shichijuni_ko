@@ -55,18 +55,18 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Future<void> toggleBackgroundMusic() async {
-  if (backgroundPlayer.playing) {
-    await backgroundPlayer.pause();
+    final shouldPlay = !isBackgroundMusicPlaying;
+
     setState(() {
-      isBackgroundMusicPlaying = false;
+      isBackgroundMusicPlaying = shouldPlay;
     });
-  } else {
-    await backgroundPlayer.play();
-    setState(() {
-      isBackgroundMusicPlaying = true;
-    });
+
+    if (shouldPlay) {
+      backgroundPlayer.play();
+    } else {
+      await backgroundPlayer.pause();
+    }
   }
-}
 
   Future<void> playAudio() async {
     final season = seasons[currentIndex];
@@ -111,14 +111,38 @@ class _HomeScreenState extends State<HomeScreen> {
     final season = seasons[currentIndex];
 
     return Scaffold(
-  body: Stack(
+  body: GestureDetector(
+  onHorizontalDragEnd: (details) {
+    final velocity = details.primaryVelocity ?? 0;
+
+    if (velocity < 0) {
+      nextSeason(); // swipe verso sinistra
+    } else if (velocity > 0) {
+      previousSeason(); // swipe verso destra
+    }
+  },
+  child: Stack(
     children: [
-      Positioned.fill(
+   Positioned.fill(
+      child: AnimatedSwitcher(
+        duration: const Duration(milliseconds: 1200),
+        switchInCurve: Curves.easeInCubic,
+        switchOutCurve: Curves.easeOutCubic,
+        transitionBuilder: (child, animation) {
+          return FadeTransition(
+            opacity: animation,
+            child: child,
+          );
+        },
+        child: SizedBox.expand(
+        key: ValueKey(season.id),
         child: Image.asset(
           season.imageAsset,
           fit: BoxFit.cover,
         ),
       ),
+     ),
+    ),
 
       Positioned.fill(
         child: Container(
@@ -138,26 +162,47 @@ class _HomeScreenState extends State<HomeScreen> {
       SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(20),
-          child: Column(
-            children: [
-              Align(
-                alignment: Alignment.topRight,
-                child: IconButton(
-                  icon: const Icon(
-                    Icons.settings,
-                    color: Colors.white,
-                    size: 28,
+          child: AnimatedSwitcher(
+            duration: const Duration(milliseconds: 500),
+            child: Column(
+              key: ValueKey(season.id),
+              children: [
+             Align(
+              alignment: Alignment.topRight,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  IconButton(
+                    icon: const Icon(
+                      Icons.settings,
+                      color: Colors.white,
+                      size: 28,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const SettingsScreen(),
+                        ),
+                      );
+                    },
                   ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (_) => const SettingsScreen(),
-                      ),
-                    );
-                  },
-                ),
+
+                  const SizedBox(height: 8),
+
+                  IconButton(
+                    icon: Icon(
+                      isBackgroundMusicPlaying
+                          ? Icons.music_note
+                          : Icons.music_off,
+                      color: Colors.white,
+                      size: 28,
+                    ),
+                    onPressed: toggleBackgroundMusic,
+                  ),
+                ],
               ),
+            ),
 
               const Spacer(),
 
@@ -230,7 +275,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               const SizedBox(height: 40),
 
-              Row(
+              /*Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CircleAvatar(
@@ -255,25 +300,18 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ],
-              ),
+              ),*/
 
-              const SizedBox(height: 20),
+              //const SizedBox(height: 20),
             ],
           ),
           
         ),
       ),
+      ),
     ],
+  
   ),
-    floatingActionButton: FloatingActionButton(
-    backgroundColor: Colors.black54,
-    foregroundColor: Colors.white,
-    onPressed: toggleBackgroundMusic,
-    child: Icon(
-      isBackgroundMusicPlaying
-          ? Icons.music_note
-          : Icons.music_off,
-    ),
   ),
 );
   }
