@@ -4,8 +4,9 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
-
+import 'package:flutter/foundation.dart';
 import '../models/micro_season.dart';
+import 'package:flutter_timezone/flutter_timezone.dart';
 
 class NotificationService {
   static final NotificationService instance = NotificationService._internal();
@@ -16,7 +17,17 @@ class NotificationService {
       FlutterLocalNotificationsPlugin();
 
   Future<void> init() async {
+    debugPrint('NOTIFICATION SERVICE INIT START');
     tz.initializeTimeZones();
+
+    final String currentTimeZone =
+        await FlutterTimezone.getLocalTimezone();
+
+    tz.setLocalLocation(
+      tz.getLocation(currentTimeZone),
+    );
+
+     debugPrint('TZ LOCAL AFTER SET: ${tz.local.name}');
 
     const androidSettings = AndroidInitializationSettings(
       '@mipmap/ic_launcher',
@@ -38,7 +49,49 @@ class NotificationService {
     await _requestPermissions();
   }
 
+    Future<void> showScheduledTestNotification() async {
+      debugPrint('TEST SCHEDULE START');
+
+      final scheduledDate = tz.TZDateTime.now(tz.local).add(
+        const Duration(minutes: 1),
+      );
+
+      debugPrint('NOW: ${tz.TZDateTime.now(tz.local)}');
+      debugPrint('SCHEDULED FOR: $scheduledDate');
+
+      const androidDetails = AndroidNotificationDetails(
+        'micro_seasons_channel',
+        'Micro seasons',
+        channelDescription: 'Notifications for Japanese micro-season changes',
+        importance: Importance.high,
+        priority: Priority.high,
+      );
+
+      const details = NotificationDetails(
+        android: androidDetails,
+        iOS: DarwinNotificationDetails(),
+      );
+
+      await _notifications.zonedSchedule(
+
+        
+        998,
+        'Scheduled test',
+        'This notification was scheduled 1 minute ago.',
+        scheduledDate,
+        details,
+        androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+        uiLocalNotificationDateInterpretation:
+            UILocalNotificationDateInterpretation.absoluteTime,
+      );
+
+      debugPrint('Scheduled test notification at: $scheduledDate');
+    }
+
+    
+
   Future<void> showTestNotification() async {
+    debugPrint('TEST SCHEDULE START');
     const androidDetails = AndroidNotificationDetails(
       'micro_seasons_channel',
       'Micro seasons',
@@ -139,7 +192,7 @@ class NotificationService {
       '${season.japaneseName} · ${season.romaji}',
       date,
       details,
-      androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+      androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
       uiLocalNotificationDateInterpretation:
           UILocalNotificationDateInterpretation.absoluteTime,
       payload: season.id.toString(),

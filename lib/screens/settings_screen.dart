@@ -93,6 +93,16 @@ class _SettingsScreenState extends State<SettingsScreen> {
             await updateNotifications();
           },
           ),
+         /* ListTile(
+                leading: const Icon(Icons.schedule),
+                title: const Text('Test scheduled notification'),
+                subtitle: const Text('Send in 1 minute'),
+                onTap: () async {
+                  debugPrint('TAP TEST SCHEDULED NOTIFICATION');
+
+                  await NotificationService.instance.showScheduledTestNotification();
+                },
+              ),
 
           ListTile(
             leading: const Icon(Icons.notifications_active),
@@ -101,7 +111,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             onTap: () async {
               await NotificationService.instance.showTestNotification();
             },
-          ),
+          ),*/
 
           ListTile(
             enabled: notificationsEnabled,
