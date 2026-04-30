@@ -140,7 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Image.asset(
           season.imageAsset,
           fit: BoxFit.cover,
-          alignment: Alignment(-0.2, 0),
+          alignment: Alignment(-0.6, 0),
         ),
       ),
      ),

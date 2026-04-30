@@ -38,6 +38,30 @@ class NotificationService {
     await _requestPermissions();
   }
 
+  Future<void> showTestNotification() async {
+    const androidDetails = AndroidNotificationDetails(
+      'micro_seasons_channel',
+      'Micro seasons',
+      channelDescription: 'Notifications for Japanese micro-season changes',
+      importance: Importance.high,
+      priority: Priority.high,
+    );
+
+    const iosDetails = DarwinNotificationDetails();
+
+    const details = NotificationDetails(
+      android: androidDetails,
+      iOS: iosDetails,
+    );
+
+    await _notifications.show(
+      999,
+      'Test notification',
+      'Japanese micro-season notification is working.',
+      details,
+    );
+  }
+
   Future<void> _requestPermissions() async {
     if (Platform.isAndroid) {
       await _notifications

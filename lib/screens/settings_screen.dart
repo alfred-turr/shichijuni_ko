@@ -95,6 +95,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
 
           ListTile(
+            leading: const Icon(Icons.notifications_active),
+            title: const Text('Test notification'),
+            subtitle: const Text('Send a notification now'),
+            onTap: () async {
+              await NotificationService.instance.showTestNotification();
+            },
+          ),
+
+          ListTile(
             enabled: notificationsEnabled,
             title: const Text('Notification time'),
             subtitle: Text(formattedTime),
