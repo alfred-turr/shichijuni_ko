@@ -13,12 +13,13 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   final SeasonService seasonService = SeasonService();
   final AudioPlayer player = AudioPlayer();
 
   final AudioPlayer backgroundPlayer = AudioPlayer();
   bool isBackgroundMusicPlaying = true;
+  
 
   List<MicroSeason> seasons = [];
   int currentIndex = 0;
@@ -29,6 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
     loadData();
     startBackgroundMusic();
+    WidgetsBinding.instance.addObserver(this);
+
   }
 
   Future<void> loadData() async {
@@ -82,6 +85,25 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
+  @override
+    void didChangeAppLifecycleState(AppLifecycleState state) {
+      debugPrint('APP LIFECYCLE STATE: $state');
+
+      if (state == AppLifecycleState.paused ||
+          state == AppLifecycleState.inactive ||
+          state == AppLifecycleState.detached ||
+          state == AppLifecycleState.hidden) {
+        backgroundPlayer.pause();
+      }
+
+      if (state == AppLifecycleState.resumed) {
+        // Riprendi solo se l’utente aveva la musica attiva
+        if (isBackgroundMusicPlaying) {
+          backgroundPlayer.play();
+        }
+      }
+    }
+
   void previousSeason() {
     setState(() {
       currentIndex = currentIndex == 0 ? seasons.length - 1 : currentIndex - 1;
@@ -96,6 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     player.dispose();
     backgroundPlayer.dispose();
     super.dispose();

@@ -120,6 +120,33 @@ class _SettingsScreenState extends State<SettingsScreen> {
             trailing: const Icon(Icons.access_time),
             onTap: notificationsEnabled ? pickTime : null,
           ),
+
+          ListTile(
+            leading: const Icon(Icons.info_outline),
+            title: const Text('Notifications Info'),
+            subtitle: const Text(
+               'If automatic notifications do not appear, please check your device settings.',
+            ),
+            onTap: () {
+              showDialog(
+                context: context,
+                builder: (context) => AlertDialog(
+                  title: const Text('Notifications Info'),
+                  content: const Text(
+                     'Notifications are delivered at the selected time.\n\n'
+                      'If you do not receive them, please check that notifications are enabled for Shichijūni Kō and that battery restrictions are not limiting the app.',
+                  ),
+                  actions: [
+                    TextButton(
+                      onPressed: () => Navigator.of(context).pop(),
+                      child: const Text('OK'),
+                    ),
+                  ],
+                ),
+              );
+            },
+          )
+
         ],
       ),
     );
