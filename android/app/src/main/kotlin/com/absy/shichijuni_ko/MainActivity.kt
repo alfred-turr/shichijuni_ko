@@ -1,4 +1,4 @@
-package com.example.shichijuni_ko
+package com.absy.shichijuni_ko
 
 import io.flutter.embedding.android.FlutterActivity
 
