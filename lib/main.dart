@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 import 'services/notification_service.dart';
+import 'package:flutter/services.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await NotificationService.instance.init();
-
+  
+  await SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
   runApp(const JapaneseSeasonsApp());
 }
 
